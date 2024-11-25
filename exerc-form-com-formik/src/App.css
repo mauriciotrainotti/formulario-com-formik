@@ -1,0 +1,90 @@
+/* Definir o fundo preto para o site */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o conteúdo no topo */
+  min-height: 100vh;
+  margin: 0;
+  background-color: #111111; /* Cor de fundo preta */
+  font-family: Arial, sans-serif;
+  color: #fff; /* Cor do texto branca para contraste */
+  padding-top: 50px; /* Espaçamento superior */
+}
+
+/* Estilização do formulário com fundo branco */
+form {
+  max-width: 700px; /* Formulário mais largo */
+  width: 100%;
+  padding: 20px;
+  background: #ffffff; /* Cor de fundo branca para o formulário */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização geral para os campos */
+div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rótulos */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* Cor do rótulo em cinza escuro */
+}
+
+/* Campos de entrada */
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo ao focar no campo */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Botão de enviar */
+button {
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover no botão */
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #007bff);
+  transform: scale(1.05);
+}
+
+/* Mensagens de erro */
+.erro {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+  }
+}
